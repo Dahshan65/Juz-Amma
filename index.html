@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مفردات جزء عم بالصور</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#f5f2e9;color:#25352d;
+ font-family:Tahoma,Arial,sans-serif;
+}
+header{
+ background:#173e32;color:white;text-align:center;
+ padding:30px 15px;border-bottom:5px solid #c7a65b;
+}
+header h1{margin:0 0 10px;font-size:27px}
+header p{margin:0;color:#e6d9b8}
+main{max-width:850px;margin:25px auto;padding:15px}
+.card{
+ background:white;border-radius:15px;padding:20px;
+ margin-bottom:18px;box-shadow:0 3px 12px #00000010;
+}
+h2{color:#916f30}
+.ayah{
+ font-family:serif;font-size:27px;line-height:2.1;
+ text-align:justify;color:#173e32;
+}
+.word{
+ border-right:4px solid #c7a65b;
+ padding:12px;margin:12px 0;background:#faf8f1;
+ border-radius:8px;
+}
+.word h3{margin:0 0 8px;color:#765b29}
+.meaning{line-height:1.8}
+footer{text-align:center;padding:25px;color:#777}
+button{
+ background:#173e32;color:white;border:0;
+ padding:12px 22px;border-radius:8px;
+ cursor:pointer;font-size:16px
+}
+</style>
+</head>
+<body>
+<header>
+<h1>مفردات جزء عم بالصور</h1>
+<p>تدبر القرآن الكريم وفهم معاني مفرداته</p>
+</header>
+
+<main>
+<section class="card">
+<h2>جزء عمّ</h2>
+<p>اختر السورة التي تريد قراءتها والتعرف على معاني مفرداتها.</p>
+<button onclick="showNaba()">سورة النبأ</button>
+</section>
+
+<section class="card" id="naba" hidden>
+<h2>سورة النبأ</h2>
+<div class="ayah">
+بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+<br>
+عَمَّ يَتَسَاءَلُونَ ۝ عَنِ النَّبَإِ الْعَظِيمِ ۝
+الَّذِي هُمْ فِيهِ مُخْتَلِفُونَ ۝
+كَلَّا سَيَعْلَمُونَ ۝ ثُمَّ كَلَّا سَيَعْلَمُونَ ۝
+</div>
+</section>
+
+<section class="card" id="words" hidden>
+<h2>المفردات الصعبة</h2>
+
+<div class="word">
+<h3>النَّبَإ</h3>
+<div class="meaning">الخبر العظيم الشأن، والمراد به خبر البعث والقيامة.</div>
+</div>
+
+<div class="word">
+<h3>مِهَادًا</h3>
+<div class="meaning">فراشًا ممهدًا صالحًا للاستقرار.</div>
+</div>
+
+<div class="word">
+<h3>أَوْتَادًا</h3>
+<div class="meaning">جمع وتد، وهي المسامير التي تثبت بها الخيمة، والمراد أن الجبال تثبت الأرض.</div>
+</div>
+
+<div class="word">
+<h3>سُبَاتًا</h3>
+<div class="meaning">راحةً وانقطاعًا عن الحركة والتعب.</div>
+</div>
+
+<div class="word">
+<h3>مَعَاشًا</h3>
+<div class="meaning">وقتًا لطلب الرزق والعمل والحياة.</div>
+</div>
+</section>
+</main>
+
+<footer>إعداد وإشراف: وائل أحمد دهشان</footer>
+
+<script>
+function showNaba(){
+ document.getElementById("naba").hidden=false;
+ document.getElementById("words").hidden=false;
+ document.getElementById("naba").scrollIntoView({behavior:"smooth"});
+}
+</script>
+</body>
+</html>
